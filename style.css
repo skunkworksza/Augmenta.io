@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.parallax {
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.framed {
+    margin: 20px auto;
+    border: 5px solid #333;
+    box-shadow: 0 0 10px #333;
+    background: #f9f9f9;
+    color: #333;
+}
+
+footer ul {
+    list-style: none;
+    text-align: center;
+    background: #333;
+    margin: 0;
+    padding: 10px 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 3D Effect for Links */
+nav ul li a:hover, footer ul li a:hover {
+    transform: perspective(500px) rotateY(20deg);
+    transition: transform 0.5s;
+}

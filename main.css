@@ -1,0 +1,33 @@
+body {
+    margin: 0 auto;
+    max-width: 80%;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+nav ul, footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}

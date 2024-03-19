@@ -1,104 +1,130 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: 'Arial', sans-serif;
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a box-sizing rule */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Body and main font styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding-top: 54px; /* Adjusted to height of the fixed nav */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  height: 54px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav ul {
-    list-style: none;
-    text-align: center;
-    background: #333;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 nav ul li {
-    display: inline-block;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    display: block;#cyberthreat-map-container {
-  background: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  background-color: #555;
+}
+
+/* Section styles */
+section {
+  padding: 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 20px;
-}
-
-#globe {
-  /* Placeholder for the globe */
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  background: url('your-globe-image.png');
-  background-size: cover;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(0,255,0,0.5);
-}
-
-.data-point {
-  display: inline-block;
-  margin: 10px;
-  padding: 5px;
-  background: #005500;
-  border: 1px solid #00aa00;
-}
-
-.data-type {
-  display: block;
-  font-weight: bold;
-}
-
-.data-value {
-  display: block;
-  font-size: 0.8em;
-}
-
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-}
-
-.parallax {
-    height: 100vh;
-    overflow: hidden;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.section-content {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 50px;
-    text-align: center;
-    color: #fff;
-}
-
-.framed {
-    margin: 20px auto;
-    border: 5px solid #333;
-    box-shadow: 0 0 10px #333;
-    background: #f9f9f9;
-    color: #333;
+  padding: 10px 0;
 }
 
 footer ul {
-    list-style: none;
-    text-align: center;
-    background: #333;
-    margin: 0;
-    padding: 10px 0;
+  list-style: none;
 }
 
 footer ul li a {
-    color: white;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
-/* 3D Effect for Links */
-nav ul li a:hover, footer ul li a:hover {
-    transform: perspective(500px) rotateY(20deg);
-    transition: transform 0.5s;
+/* Add any specific styles for your sections here */
+.framed {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover, .contact-button:focus {
+  background-color: #0056b3;
+}
+
+/* Responsive typography */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
 }

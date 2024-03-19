@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Page</title>
+    <title>Augmenta Cyber Security</title>
     <style>
         body {
             margin: 0;
@@ -44,29 +44,9 @@
         nav a.logo {
             font-size: 1.5em;
             background: url('https://augcyba.com/images/aug-cyber-wordmark-dark-grey.png') no-repeat left center;
-            background-size: 50px 50px;
+            background-size: contain;
             padding-left: 60px;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        nav div.dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        nav div.dropdown .dropbtn {
-            font-size: 16px;    
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 16px;
-            background-color: inherit;
-            font-family: inherit;
-            margin: 0;
+            width: 200px; /* Adjust the width as necessary */
         }
 
         nav .dropdown-content {
@@ -76,6 +56,10 @@
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
+        }
+
+        nav .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         nav .dropdown-content a {
@@ -89,10 +73,6 @@
 
         nav .dropdown-content a:hover {
             background-color: #ddd;
-        }
-
-        nav div.dropdown:hover .dropdown-content {
-            display: block;
         }
 
         .container {
@@ -123,39 +103,37 @@
 <body>
 
 <nav>
-    <a href="#" class="logo">YourLogo</a>
+    <a href="index.html" class="logo"></a>
     <div class="dropdown">
-        <button class="dropbtn">Menu 
-            <i class="fa fa-caret-down"></i>
-        </button>
+        <span class="dropbtn">Menu</span>
         <div class="dropdown-content">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="Data_Protection_Solutions_Comparison.html">Data Protection Solutions</a>
+            <a href="Data_Retention_Checklist.html">Data Retention Checklist</a>
+            <a href="docs/Requirements_Checklist.MD">Requirements Checklist</a>
         </div>
     </div> 
 </nav>
 
 <header id="home">
-    <h1>Welcome to Our Professional Services</h1>
-    <p>Protecting your digital assets with cutting-edge solutions.</p>
-    <button class="contact-button">Get Started</button>
+    <h1>Welcome to Augmenta Cyber Security</h1>
+    <p>Your trusted partner in digital asset protection.</p>
+    <button class="contact-button">Learn More</button>
 </header>
 
 <section id="about">
-    <h2>About Us</h2>
-    <p>Delivering excellence in cybersecurity for over a decade.</p>
+    <h2>What We Do</h2>
+    <p>Our expertise ensures the safeguarding of sensitive data against unauthorized access and theft.</p>
 </section>
 
 <section id="services">
-    <h2>Our Services</h2>
-    <p>Explore our wide range of services tailored to your needs.</p>
+    <h2>Services</h2>
+    <p>We provide a comprehensive suite of cybersecurity solutions tailored to your specific needs.</p>
 </section>
 
 <section id="contact">
-    <h3>Contact Us</h3>
-    <p>Connect with our team for more information.</p>
+    <h3>Get In Touch</h3>
+    <p>Contact us to find out how we can help protect your digital infrastructure.</p>
 </section>
 
 <footer>

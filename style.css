@@ -3,6 +3,18 @@ body, html {
     padding: 0;
     width: 100%;
     font-family: Arial, sans-serif;
+
+    .centered-section {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.centered-section h1,
+.centered-section h2,
+.centered-section p {
+  margin: 0 0 20px 0;
+
 }
 
 nav ul {

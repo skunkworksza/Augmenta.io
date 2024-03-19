@@ -1,9 +1,9 @@
-document.addEventListener('scroll', function(e) {
-    var scrolled = window.pageYOffset;
-    var parallaxElements = document.querySelectorAll('.parallax');
-    for (var i = 0; i < parallaxElements.length; i++) {
-        var elem = parallaxElements[i];
-        var parallaxRate = elem.getAttribute('data-parallax-rate') || 0.5;
-        elem.style.backgroundPositionY = (scrolled * parallaxRate) + 'px';
-    }
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 });
